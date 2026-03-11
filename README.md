@@ -1,6 +1,6 @@
 # __The setup for GTK C Programming__
 
-## 1- Install gtk3 (I use CentOS, so I use yum/dnf ackage manager):
+## 1- Install gtk3 (I use CentOS, so I use yum/dnf package manager):
 ```bash
 $ sudo yum install -y gtk3 gtk3-devel
 ```

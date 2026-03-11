@@ -12,7 +12,7 @@ $ cat << EOF >> gcc-gtk.sh
 
 export DISPLAY=:0.0
 GTK_FLAGS=$(pkg-config --cflags --libs gtk+-3.0)
-# 1st passed argument os the .c file name , 2nd is the executable output file name
+# 1st passed argument is the .c file name , 2nd is the executable output file name
 gcc $1 -g -O1 -o $2 $GTK_FLAGS
 
 EOF
@@ -29,3 +29,9 @@ Note: It's better to source this installed shell script as it contains a shell v
 $ sudo echo 'alias gcc-gtk=\'source `which gcc-gtk.sh`\'' >> ~/.bashrc 
 ```
 
+## 5- Sample build and run commands
+
+```bash
+$ gcc-gtk ./gtk3-app1.c window1 
+$ ./window1
+```

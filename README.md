@@ -8,11 +8,11 @@ $ sudo yum install -y gtk3 gtk3-devel
 ## 2- Create a bash script file that eases building gtk programs in C via gcc compiler
 ```bash
 $ cat << EOF >> gcc-gtk.sh
-\#!/bin/bash
+#!/bin/bash
 
 export DISPLAY=:0.0
 GTK_FLAGS=$(pkg-config --cflags --libs gtk+-3.0)
-\# 1st passed argument os the .c file name , 2nd is the executable output file name
+# 1st passed argument os the .c file name , 2nd is the executable output file name
 gcc $1 -g -O1 -o $2 $GTK_FLAGS
 
 EOF

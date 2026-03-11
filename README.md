@@ -21,7 +21,7 @@ EOF
 
 ```bash
 $ chmod +x ./gcc-gtk.sh
-$ sudo install gcc-gtk.sh
+$ sudo install gcc-gtk.sh /usr/bin
 ```
 ## 4- Add a small alias to the gcc-gtk.sh to ease executing it
 Note: It's better to source this installed shell script as it contains a shell variable required by the same shell that will build the gtk project

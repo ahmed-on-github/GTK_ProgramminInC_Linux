@@ -26,9 +26,7 @@ $ sudo install gcc-gtk.sh /usr/bin
 ## 4- Add a small alias to the gcc-gtk.sh to ease executing it
 Note: It's better to source this installed shell script as it contains a shell variable required by the same shell that will build the gtk project
 ```bash
-$ sudo echo \
-'alias gcc-gtk=\'source `which gcc-gtk.sh`\'' \
->> ~/.bashrc 
+$  echo "alias gcc-gtk='source `which gcc-gtk.sh`'" >> ~/.bashrc
 ```
 
 ## 5- Sample build and run commands

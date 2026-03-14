@@ -2,7 +2,7 @@
 
 ## 1- Install gtk3 (I use CentOS, so I use yum/dnf package manager):
 ```bash
-$ sudo yum install -y gtk3 gtk3-devel
+$ sudo yum install -y gtk3 gtk+-devel gtk3-devel
 ```
 
 ## 2- Create a bash script file that eases building gtk programs in C via gcc compiler
@@ -31,5 +31,5 @@ $  echo "alias gcc-gtk='source `which gcc-gtk.sh`'" >> ~/.bashrc
 
 ```bash
 $ gcc-gtk ./gtk3-app1.c window1 
-$ ./window1
+$ ./window1 &
 ```
